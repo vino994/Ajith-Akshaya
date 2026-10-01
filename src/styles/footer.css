@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap');
+
+/* ══════════════════════════════════════
+   FOOTER
+══════════════════════════════════════ */
+
+.footer {
+  position: relative;
+  padding: 100px 20px 65px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 650px;
+}
+
+/* ══════════════════════════════════════
+   BACKGROUND
+══════════════════════════════════════ */
+
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.footer-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+  filter: brightness(0.55) saturate(1.1);
+  transform: scale(1.05) scaleY(-1);
+}
+
+/* ══════════════════════════════════════
+   OVERLAY
+══════════════════════════════════════ */
+
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  background:
+    radial-gradient(
+      ellipse 90% 60% at 50% 100%,
+      rgba(180, 110, 40, 0.22) 0%,
+      transparent 70%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 4, 2, 0.82) 0%,
+      rgba(6, 4, 2, 0.55) 50%,
+      rgba(6, 4, 2, 0.75) 100%
+    );
+}
+
+/* ══════════════════════════════════════
+   GRAIN
+══════════════════════════════════════ */
+
+.footer-grain {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+/* ══════════════════════════════════════
+   TOP BORDER LINE
+══════════════════════════════════════ */
+
+.footer-top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+  padding: 0 8%;
+}
+
+.ftl-line {
+  flex: 1;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(247, 197, 110, 0.55),
+      transparent
+    );
+}
+
+.ftl-diamond {
+  display: inline-block;
+
+  width: 9px;
+  height: 9px;
+
+  background: #f7c56e;
+
+  transform: rotate(45deg);
+
+  box-shadow:
+    0 0 16px rgba(247, 197, 110, 0.8);
+
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════
+   CONTENT
+══════════════════════════════════════ */
+
+.footer-content {
+  position: relative;
+  z-index: 10;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ══════════════════════════════════════
+   EYEBROW
+══════════════════════════════════════ */
+
+.footer-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #f7c56e;
+
+  font-size: 11px;
+  line-height: 1;
+
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+
+  margin-bottom: 28px;
+}
+
+.fe-line {
+  display: inline-block;
+
+  width: 40px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #f7c56e
+    );
+}
+
+.fe-line--r {
+  background:
+    linear-gradient(
+      90deg,
+      #f7c56e,
+      transparent
+    );
+}
+
+/* ══════════════════════════════════════
+   MAIN MESSAGE
+══════════════════════════════════════ */
+
+.footer-message {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.86);
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(18px, 2.2vw, 24px);
+
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  letter-spacing: 0.025em;
+
+  text-align: center;
+
+  text-shadow:
+    0 2px 15px rgba(0, 0, 0, 0.45);
+}
+
+.footer-message p {
+  margin: 0;
+}
+
+.footer-message p + p {
+  margin-top: 5px;
+}
+
+/* Second paragraph block */
+
+.footer-message--second {
+  margin-top: 12px;
+}
+
+/* ══════════════════════════════════════
+   HEART
+══════════════════════════════════════ */
+
+.footer-heart-wrap {
+  position: relative;
+
+  display: inline-block;
+
+  margin: 22px 0 16px;
+}
+
+.footer-heart {
+  display: inline-block;
+
+  position: relative;
+  z-index: 2;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 42px;
+
+  color: #e8a7a7;
+
+  line-height: 1;
+
+  filter:
+    drop-shadow(
+      0 0 14px rgba(247, 100, 100, 0.65)
+    );
+}
+
+.heart-ring {
+  position: absolute;
+
+  inset: -8px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(247, 100, 100, 0.3);
+
+  animation:
+    heartPulse 2s ease-out infinite;
+
+  pointer-events: none;
+}
+
+.heart-ring--2 {
+  animation-delay: 1s;
+}
+
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+/* ══════════════════════════════════════
+   DIVIDER
+══════════════════════════════════════ */
+
+.footer-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin: 18px auto 0;
+}
+
+.fd-line {
+  display: inline-block;
+
+  width: 80px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(247, 197, 110, 0.6)
+    );
+}
+
+.fd-line--r {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(247, 197, 110, 0.6),
+      transparent
+    );
+}
+
+.fd-diamond {
+  display: inline-block;
+
+  width: 6px;
+  height: 6px;
+
+  background: #f7c56e;
+
+  transform: rotate(45deg);
+
+  box-shadow:
+    0 0 10px rgba(247, 197, 110, 0.7);
+}
+
+.fd-dot {
+  display: inline-block;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(247, 197, 110, 0.55);
+}
+
+/* ══════════════════════════════════════
+   COUPLE NAMES
+══════════════════════════════════════ */
+
+.footer-couple {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 24px;
+
+  color: #f1dfd4;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(19px, 2.4vw, 27px);
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  text-align: center;
+
+  text-shadow:
+    0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer-amp {
+  color: #f7c56e;
+
+  font-family: 'Great Vibes', cursive;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+/* ══════════════════════════════════════
+   DATE
+══════════════════════════════════════ */
+
+.footer-date {
+  margin-top: 22px;
+}
+
+.footer-date-inner {
+  display: inline-block;
+
+  padding: 7px 24px;
+
+  border-radius: 30px;
+
+  border:
+    1px solid rgba(247, 197, 110, 0.28);
+
+  background:
+    rgba(247, 197, 110, 0.07);
+
+  color: #f7c56e;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.3em;
+
+  line-height: 1.2;
+}
+
+/* ══════════════════════════════════════
+   FLOURISH
+══════════════════════════════════════ */
+
+.footer-flourish {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.flourish-line {
+  display: inline-block;
+
+  width: 56px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(247, 197, 110, 0.4)
+    );
+}
+
+.flourish-line:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(247, 197, 110, 0.4),
+      transparent
+    );
+}
+
+.flourish-leaf {
+  color: rgba(247, 197, 110, 0.75);
+
+  font-size: 14px;
+
+  display: inline-block;
+}
+
+/* ══════════════════════════════════════
+   FINAL TEXT
+══════════════════════════════════════ */
+
+.footer-copy {
+  margin-top: 18px;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 12px;
+
+  letter-spacing: 0.14em;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  line-height: 1.5;
+}
+
+/* ══════════════════════════════════════
+   TABLET
+══════════════════════════════════════ */
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding: 85px 18px 55px;
+  }
+
+  .footer-message {
+    font-size: 20px;
+    max-width: 650px;
+  }
+
+  .footer-heart {
+    font-size: 36px;
+  }
+
+  .footer-couple {
+    font-size: 22px;
+  }
+
+  .footer-amp {
+    font-size: 28px;
+  }
+
+  .fd-line {
+    width: 55px;
+  }
+
+  .footer-date-inner {
+    font-size: 12px;
+  }
+}
+
+/* ══════════════════════════════════════
+   MOBILE
+══════════════════════════════════════ */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 75px 16px 48px;
+    min-height: 580px;
+  }
+
+  .footer-top-line {
+    padding: 0 5%;
+    gap: 10px;
+  }
+
+  .ftl-diamond {
+    width: 7px;
+    height: 7px;
+  }
+
+  /* Eyebrow */
+
+  .footer-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.24em;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+  }
+
+  .fe-line {
+    width: 28px;
+  }
+
+  /* Main message */
+
+  .footer-message {
+    max-width: 360px;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.015em;
+  }
+
+  .footer-message--second {
+    margin-top: 8px;
+  }
+
+  /* Heart */
+
+  .footer-heart-wrap {
+    margin: 19px 0 13px;
+  }
+
+  .footer-heart {
+    font-size: 32px;
+  }
+
+  /* Divider */
+
+  .footer-divider {
+    margin-top: 16px;
+
+    gap: 7px;
+  }
+
+  .fd-line {
+    width: 38px;
+  }
+
+  .fd-diamond {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Couple */
+
+  .footer-couple {
+    margin-top: 20px;
+
+    gap: 8px;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+  }
+
+  .footer-amp {
+    font-size: 25px;
+  }
+
+  /* Date */
+
+  .footer-date {
+    margin-top: 18px;
+  }
+
+  .footer-date-inner {
+    padding: 6px 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.23em;
+  }
+
+  /* Flourish */
+
+  .footer-flourish {
+    gap: 10px;
+
+    margin-top: 26px;
+  }
+
+  .flourish-line {
+    width: 38px;
+  }
+
+  .flourish-leaf {
+    font-size: 12px;
+  }
+
+  /* Copy */
+
+  .footer-copy {
+    max-width: 320px;
+
+    margin: 16px auto 0;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.1em;
+  }
+}
+
+/* ══════════════════════════════════════
+   VERY SMALL DEVICES
+══════════════════════════════════════ */
+
+@media (max-width: 380px) {
+
+  .footer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .footer-message {
+    font-size: 16px;
+  }
+
+  .footer-couple {
+    font-size: 16px;
+  }
+
+  .footer-amp {
+    font-size: 22px;
+  }
+
+  .fd-line {
+    width: 30px;
+  }
+
+  .footer-date-inner {
+    font-size: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
