@@ -665,9 +665,9 @@ const CoupleSection = () => {
             <div className="person-block">
 
               <div className="person-name-row">
-                <span className="person-name">
+                <p className="person-name">
                   Ajithkumar
-                </span>
+                </p>
 
                 <span className="person-degree">
                   B.E.
@@ -680,7 +680,7 @@ const CoupleSection = () => {
                 </span>
 
                 <span>
-                  Regional Rural Bank, Bangalore
+                  Karnataka Grameena Bank, Bangalore
                 </span>
               </div>
 
@@ -699,12 +699,12 @@ const CoupleSection = () => {
             <div className="person-block">
 
               <div className="person-name-row">
-                <span className="person-name">
+                <p className="person-name">
                   Akshaya
-                </span>
+                </p>
 
                 <span className="person-degree">
-                  M.C., B.Ed.
+                  M.Sc., B.Ed.
                 </span>
               </div>
 
