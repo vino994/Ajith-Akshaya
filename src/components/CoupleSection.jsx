@@ -736,9 +736,7 @@ const CoupleSection = () => {
 
             <div className="parent-card groom-parent">
 
-              <div className="parent-label">
-                GROOM
-              </div>
+             
 
               <div className="parent-icon">
                 ❦
@@ -784,9 +782,7 @@ const CoupleSection = () => {
 
             <div className="parent-card bride-parent">
 
-              <div className="parent-label">
-                BRIDE
-              </div>
+            
 
               <div className="parent-icon">
                 ❦
@@ -799,7 +795,11 @@ const CoupleSection = () => {
               <p className="parent-name">
                 Shri D. Balamurugan
               </p>
-
+               <div className="person-work">
+                <span>
+                  Regional deputy engineering, Tamilnadu Civil Supplies Corporation
+                </span>
+                </div>
               <span className="late-text">
                 (Late)
               </span>
