@@ -795,15 +795,14 @@ const CoupleSection = () => {
               <p className="parent-name">
                 Shri D. Balamurugan
               </p>
+               <span className="late-text">
+                (Late)
+              </span>
                <div className="person-work">
                 <span>
                   Regional deputy engineering, Tamilnadu Civil Supplies Corporation
                 </span>
                 </div>
-              <span className="late-text">
-                (Late)
-              </span>
-
               <span className="parent-and">
                 &amp;
               </span>
