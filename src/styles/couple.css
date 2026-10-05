@@ -611,21 +611,21 @@
 
 .parents-grid {
   width: 100%;
-
   display: grid;
 
   grid-template-columns:
-    1fr
+    minmax(0, 1fr)
     20px
-    1fr;
+    minmax(0, 1fr);
 
   align-items: stretch;
 
   gap: 12px;
 
   margin: 2px 0 5px;
-
   padding: 14px 12px;
+
+  box-sizing: border-box;
 
   border-top:
     1px solid rgba(200, 151, 58, 0.20);
@@ -650,19 +650,19 @@
 ═════════════════════════════════════ */
 
 .parent-card {
-  display: flex;
+  width: 100%;
+  min-width: 0;
 
+  display: flex;
   flex-direction: column;
 
   align-items: center;
-
   justify-content: flex-start;
 
   text-align: center;
 
-  min-width: 0;
+  box-sizing: border-box;
 }
-
 
 .parent-label {
   display: inline-flex;
@@ -698,7 +698,6 @@
   color: #c8973a;
 
   font-size: 18px;
-
   line-height: 1;
 
   margin: 5px 0 2px;
@@ -706,7 +705,6 @@
   text-shadow:
     0 0 10px rgba(200, 151, 58, 0.4);
 }
-
 
 .parent-title {
   margin: 0 0 1px;
@@ -716,10 +714,11 @@
     serif;
 
   font-size: 12px;
-
   font-style: italic;
+  line-height: 1.15;
 
-  color: rgba(255, 245, 220, 0.65);
+  color:
+    rgba(255, 245, 220, 0.65);
 }
 
 
@@ -731,38 +730,90 @@
     serif;
 
   font-size: 16px;
-
   font-weight: 600;
+  line-height: 1.15;
 
   color: #fbecc8;
-
-  line-height: 1.15;
 }
 
-
 .late-text {
+  display: block;
+
+  min-height: 12px;
+
   font-family:
     'Cormorant Garamond',
     serif;
 
   font-size: 10px;
-
   font-style: italic;
+  line-height: 1.2;
 
-  color: rgba(255, 245, 220, 0.60);
+  color:
+    rgba(255, 245, 220, 0.60);
+}
+.parent-work-slot {
+  width: 100%;
+
+  height: 50px;
+  min-height: 50px;
+
+  margin-top: 6px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 2px;
+
+  box-sizing: border-box;
 }
 
+.parent-work-slot span:first-child {
+  font-family:
+    'Cormorant Garamond',
+    serif;
 
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  color: #fff1cf;
+
+  letter-spacing: 0.2px;
+}
+
+.parent-work-slot span:last-child {
+  font-family:
+    'Cormorant Garamond',
+    serif;
+
+  font-size: 10px;
+  line-height: 1.25;
+
+  color:
+    rgba(255, 245, 220, 0.78);
+
+  max-width: 220px;
+}
+
+.parent-work-slot--empty {
+  visibility: hidden;
+}
 .parent-and {
+  display: block;
+
   font-family:
     'Great Vibes',
     cursive;
 
-  color: #c8973a;
-
   font-size: 22px;
-
   line-height: 1;
+
+  color: #c8973a;
 
   margin: 2px 0;
 }
@@ -771,14 +822,14 @@
 /* ═════════════════════════════════════
    PARENT DIVIDER
 ═════════════════════════════════════ */
-
 .parents-divider {
+  height: 100%;
+
   display: flex;
 
   flex-direction: column;
 
   align-items: center;
-
   justify-content: center;
 
   gap: 6px;
@@ -801,16 +852,15 @@
     );
 }
 
-
 .parents-divider div {
   color: #c8973a;
 
   font-size: 9px;
+  line-height: 1;
 
   text-shadow:
     0 0 8px rgba(200, 151, 58, 0.5);
 }
-
 
 /* ═════════════════════════════════════
    QUOTE
@@ -1235,49 +1285,66 @@
 
 
   .parents-grid {
-    gap: 5px;
+  width: 100%;
 
-    padding:
-      12px
-      5px;
-  }
+  grid-template-columns:
+    minmax(0, 1fr)
+    18px
+    minmax(0, 1fr);
 
+  gap: 5px;
 
-  .parent-label {
-    font-size: 7px;
+  padding:
+    12px 5px;
 
-    padding:
-      3px
-      7px;
+  box-sizing: border-box;
+}
 
-    letter-spacing: 1.5px;
-  }
+.parent-icon {
+  font-size: 15px;
+  margin-top: 4px;
+}
 
+.parent-title {
+  font-size: 10px;
+}
 
-  .parent-icon {
-    font-size: 15px;
-  }
+.parent-name {
+  font-size: 13px;
+}
 
+.late-text {
+  font-size: 9px;
+  min-height: 11px;
+}
 
-  .parent-title {
-    font-size: 10px;
-  }
+.parent-work-slot {
+  height: 62px;
+  min-height: 62px;
 
+  margin-top: 5px;
 
-  .parent-name {
-    font-size: 13px;
-  }
+  gap: 1px;
+}
 
+.parent-work-slot span:first-child {
+  font-size: 10px;
+  line-height: 1.15;
+}
 
-  .late-text {
-    font-size: 9px;
-  }
+.parent-work-slot span:last-child {
+  font-size: 8px;
+  line-height: 1.2;
 
+  max-width: 145px;
+}
 
-  .parent-and {
-    font-size: 18px;
-  }
+.parent-and {
+  font-size: 18px;
+  line-height: 1;
 
+  margin: 2px 0;
+}
 
   /* QUOTE */
 
@@ -1394,32 +1461,60 @@
     margin-top: 20px;
   }
 
+.parents-grid {
+  grid-template-columns:
+    minmax(0, 1fr)
+    16px
+    minmax(0, 1fr);
 
-  .parents-grid {
-    padding:
-      10px
-      2px;
+  padding:
+    10px 2px;
 
-    gap: 2px;
-  }
+  gap: 2px;
+}
 
+.parent-name {
+  font-size: 11px;
+}
 
-  .parent-name {
-    font-size: 11px;
-  }
+.parent-title {
+  font-size: 9px;
+}
 
+.parent-icon {
+  font-size: 14px;
+}
 
-  .parent-title {
-    font-size: 9px;
-  }
+.late-text {
+  font-size: 8px;
+  min-height: 10px;
+}
 
+.parent-work-slot {
+  height: 38px;
+  min-height: 38px;
 
-  .parents-heading {
-    font-size: 7px;
+  margin-top: 4px;
 
-    letter-spacing: 1px;
-  }
+  gap: 1px;
+}
 
+.parent-work-slot span:first-child {
+  font-size: 9px;
+  line-height: 1.1;
+}
+
+.parent-work-slot span:last-child {
+  font-size: 7.5px;
+  line-height: 1.15;
+
+  max-width: 120px;
+}
+
+.parent-and {
+  font-size: 16px;
+  margin: 2px 0;
+}
 
   .detail-text {
     font-size: 10px;

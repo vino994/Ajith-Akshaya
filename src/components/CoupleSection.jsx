@@ -729,91 +729,118 @@ const CoupleSection = () => {
           </div>
 
 
-          <div className="parents-grid">
+         {/* ═════════════════════════════
+    PARENTS GRID
+═════════════════════════════ */}
+
+<div className="parents-grid">
+
+  {/* ═══════════════════════════
+      GROOM PARENTS
+  ═══════════════════════════ */}
+
+  <div className="parent-card groom-parent">
+
+    <div className="parent-icon">
+      ❦
+    </div>
+
+    <p className="parent-title">
+      Son of
+    </p>
+
+    {/* Father */}
+    <p className="parent-name">
+      Shri N. Sanjeev
+    </p>
+
+    <span className="late-text">
+      (Late)
+    </span>
+
+    {/* Reserved work area
+        Groom father has no work position,
+        but this keeps both sides aligned. */}
+    <div className="parent-work-slot" aria-hidden="true">
+      <span>&nbsp;</span>
+      <span>&nbsp;</span>
+    </div>
+
+    {/* Parent separator */}
+    <span className="parent-and">
+      &amp;
+    </span>
+
+    {/* Mother */}
+    <p className="parent-name">
+      S. Jayasudha
+    </p>
+
+    <span className="late-text">
+      (Late)
+    </span>
+
+  </div>
 
 
-            {/* GROOM PARENTS */}
+  {/* ═══════════════════════════
+      DIVIDER
+  ═══════════════════════════ */}
 
-            <div className="parent-card groom-parent">
-
-             
-
-              <div className="parent-icon">
-                ❦
-              </div>
-
-              <p className="parent-title">
-                Son of
-              </p>
-
-              <p className="parent-name">
-                Shri N. Sanjeev
-              </p>
-
-              <span className="late-text">
-                (Late)
-              </span>
-
-              <span className="parent-and">
-                &amp;
-              </span>
-
-              <p className="parent-name">
-                S. Jayasudha
-              </p>
-
-              <span className="late-text">
-                (Late)
-              </span>
-
-            </div>
+  <div className="parents-divider">
+    <span />
+    <div>✦</div>
+    <span />
+  </div>
 
 
-            {/* DIVIDER */}
+  {/* ═══════════════════════════
+      BRIDE PARENTS
+  ═══════════════════════════ */}
 
-            <div className="parents-divider">
-              <span />
-              <div>✦</div>
-              <span />
-            </div>
+  <div className="parent-card bride-parent">
 
+    <div className="parent-icon">
+      ❦
+    </div>
 
-            {/* BRIDE PARENTS */}
+    <p className="parent-title">
+      Daughter of
+    </p>
 
-            <div className="parent-card bride-parent">
+    {/* Father */}
+    <p className="parent-name">
+      Shri D. Balamurugan
+    </p>
 
-            
+    <span className="late-text">
+      (Late)
+    </span>
 
-              <div className="parent-icon">
-                ❦
-              </div>
+    {/* Father's work position */}
+    <div className="parent-work-slot">
+      <span>
+        Regional Deputy Engineering
+      </span>
 
-              <p className="parent-title">
-                Daughter of
-              </p>
+      <span>
+        Tamilnadu Civil Supplies Corporation
+      </span>
+    </div>
 
-              <p className="parent-name">
-                Shri D. Balamurugan
-              </p>
-               <span className="late-text">
-                (Late)
-              </span>
-               <div className="person-work">
-                <span>
-                  Regional deputy engineering, Tamilnadu Civil Supplies Corporation
-                </span>
-                </div>
-              <span className="parent-and">
-                &amp;
-              </span>
+    {/* Parent separator */}
+    <span className="parent-and">
+      &amp;
+    </span>
 
-              <p className="parent-name">
-                B. Geetha, B.A.,
-              </p>
+    {/* Mother */}
+    <p className="parent-name">
+      B. Geetha, B.A.
+    </p>
 
-            </div>
+  </div>
 
-          </div>
+</div>
 
 
           <KolamDivider />

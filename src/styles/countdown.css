@@ -390,4 +390,7 @@
 @media (max-width: 420px) {
   .countdown-title  { font-size: 44px; }
   .countdown-box    { width: calc(50% - 6px); }
+  .countdown-eyebrow{
+    letter-spacing:9px;
+  }
 }
