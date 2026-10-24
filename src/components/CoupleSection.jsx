@@ -738,7 +738,7 @@ const CoupleSection = () => {
 
     {/* Father */}
     <p className="parent-name">
-      Shri N. Sanjeev
+      Mr. N. Sanjeev
     </p>
 
     <span className="late-text">
@@ -757,7 +757,7 @@ const CoupleSection = () => {
 
     {/* Mother */}
     <p className="parent-name">
-      S. Jayasudha
+      Mrs.Jayasudha.S
     </p>
 
     <span className="late-text">
@@ -794,7 +794,7 @@ const CoupleSection = () => {
 
     {/* Father */}
     <p className="parent-name">
-      Shri D. Balamurugan
+      Mr.Balamurugan.D
     </p>
 
     <span className="late-text">
@@ -810,7 +810,7 @@ const CoupleSection = () => {
 
     {/* Mother */}
     <p className="parent-name">
-      B. Geetha
+      Mrs.Geetha.B
     </p>
 
   </div>
