@@ -805,16 +805,7 @@ const CoupleSection = () => {
     </span>
 
     {/* Father's work position */}
-    <div className="parent-work-slot">
-      <span>
-        Regional Deputy Engineering
-      </span>
-
-      <span>
-        Tamilnadu Civil Supplies Corporation
-      </span>
-    </div>
-
+    
     {/* Parent separator */}
     <span className="parent-and">
       &amp;
