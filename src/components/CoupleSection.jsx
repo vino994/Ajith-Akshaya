@@ -669,20 +669,10 @@ const CoupleSection = () => {
                   Ajithkumar
                 </p>
 
-                <span className="person-degree">
-                  B.E.
-                </span>
+                
               </div>
 
-              <div className="person-work">
-                <span>
-                  Assistant Manager
-                </span>
-
-                <span>
-                  Karnataka Grameena Bank, Bangalore
-                </span>
-              </div>
+              
 
             </div>
 
@@ -703,9 +693,6 @@ const CoupleSection = () => {
                   Akshaya
                 </p>
 
-                <span className="person-degree">
-                  M.Sc., B.Ed.
-                </span>
               </div>
 
             
