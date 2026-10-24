@@ -8,7 +8,7 @@ import VenueSection from './components/VenueSection'
 import Footer from './components/Footer'
 import Loader from './components/Loader'
 import MusicControl from './components/MusicControl'
-import musicFile from './assets/marriage.mp3'
+import musicFile from './assets/Ajith.mp3'
 
 function App() {
 
