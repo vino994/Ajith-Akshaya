@@ -145,8 +145,7 @@ const VenueSection = () => {
           loading='lazy'
           allowFullScreen
           referrerPolicy='no-referrer-when-downgrade'
-         src='https://www.google.com/maps?q=Vadakarai+Murugan+Temple+Aranthangi&output=embed'
-        />
+         src='https://maps.app.goo.gl/m5S7jqajvJ4FJUEU7?g_st=ac'
       </motion.div>
 
     </section>
