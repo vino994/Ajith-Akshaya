@@ -748,10 +748,7 @@ const CoupleSection = () => {
     {/* Reserved work area
         Groom father has no work position,
         but this keeps both sides aligned. */}
-    <div className="parent-work-slot" aria-hidden="true">
-      <span>&nbsp;</span>
-      <span>&nbsp;</span>
-    </div>
+    
 
     {/* Parent separator */}
     <span className="parent-and">
@@ -813,7 +810,7 @@ const CoupleSection = () => {
 
     {/* Mother */}
     <p className="parent-name">
-      B. Geetha, B.A.
+      B. Geetha
     </p>
 
   </div>
