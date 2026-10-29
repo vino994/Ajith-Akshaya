@@ -1,6 +1,6 @@
 import './../styles/couple.css'
 
-import couple from '../assets/couple.webp'
+import couple from '../assets/SAVE_20261029_173307.jpg'
 import sky from '../assets/sky.jpg'
 import temple from '../assets/temple2.png'
 
