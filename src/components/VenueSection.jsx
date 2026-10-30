@@ -122,7 +122,7 @@ const VenueSection = () => {
 
           {/* BUTTON */}
           <motion.a
-            href='https://www.google.com/maps/place/Hotel+Sami+V+Landmarks+Aranthangi/@10.1711248,78.9875287,17z/data=!3m1!4b1!4m9!3m8!1s0x3b006c9bce85f997:0x3ce3218cc19fcbfb!5m2!4m1!1i2!8m2!3d10.1711195!4d78.9901036!16s%2Fg%2F11g6pwnjhm?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D'
+            href='https://www.google.com/maps/dir//Hotel+Sami+V+Landmarks+Aranthangi,+Pudukkottai+Main+Road,+Aranthangi,+Tamil+Nadu+614616/@10.1702901,78.9877147,17z/data=!4m12!1m2!2m1!1ssami+v+land!4m8!1m0!1m5!1m1!1s0x3b006c9bce85f997:0x3ce3218cc19fcbfb!2m2!1d78.9901036!2d10.1711195!3e9?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D'
             target='_blank'
             rel='noreferrer'
             className='card-btn'
@@ -145,7 +145,7 @@ const VenueSection = () => {
           loading='lazy'
           allowFullScreen
           referrerPolicy='no-referrer-when-downgrade'
-          src='https://www.google.com/maps/place/Hotel+Sami+V+Landmarks+Aranthangi/@10.1711248,78.9875287,17z/data=!3m1!4b1!4m9!3m8!1s0x3b006c9bce85f997:0x3ce3218cc19fcbfb!5m2!4m1!1i2!8m2!3d10.1711195!4d78.9901036!16s%2Fg%2F11g6pwnjhm?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D'
+          src='https://www.google.com/maps/dir//Hotel+Sami+V+Landmarks+Aranthangi,+Pudukkottai+Main+Road,+Aranthangi,+Tamil+Nadu+614616/@10.1702901,78.9877147,17z/data=!4m12!1m2!2m1!1ssami+v+land!4m8!1m0!1m5!1m1!1s0x3b006c9bce85f997:0x3ce3218cc19fcbfb!2m2!1d78.9901036!2d10.1711195!3e9?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D'
             
       </motion.div>
 
